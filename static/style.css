@@ -1245,12 +1245,7 @@ section:nth-child(odd) .animate.scroll {
     flex-basis: 100%;
   }
   .about-col-1 {
-    padding: 0 3rem 0 3rem;
     margin-bottom: 30px;
-  }
-
-  .about-col-2 {
-    padding: 0 3rem 0 3rem;
   }
 
   .portfolio-container {
@@ -1294,9 +1289,15 @@ section:nth-child(odd) .animate.scroll {
   .portfolio_popup-inner {
     width: 95%;
   }
+
+  .about {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
 }
 
-@media (max-width: 375px) {
+@media (max-width: 385px) {
   .home {
     justify-content: center;
   }
@@ -1312,6 +1313,20 @@ section:nth-child(odd) .animate.scroll {
   .home-content p {
     padding: 0 20px 0 20px;
   }
+  .about {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+ 
+  .portfolio_popup-inner {
+    word-wrap: break-word;
+  }
+
+  .details_description {
+    overflow-x: hidden;
+    max-width: 95%;
+  }
+  
 }
 
 /************** KeyFrames functions **************/
