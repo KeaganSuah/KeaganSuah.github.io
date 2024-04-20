@@ -1,4 +1,4 @@
-# Keagan's Portfolio Website
+# 👨🏻‍💻 Keagan's Portfolio Website
 
 Welcome to my portfolio website! This is the place where I showcase my skills and expertise as a first-year computer science student passionate about solving real-world problems through innovative projects. 
 
