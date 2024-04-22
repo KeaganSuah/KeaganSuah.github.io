@@ -510,7 +510,7 @@ section {
   border: 0.15rem solid var(--border-color);
   background-color: var(--border-color-before);
   padding: 3.5rem 2.5 rem;
-  border-radius: 0.6rem;
+  border-radius: 1rem;
   transition: 0.5s ease;
 }
 
@@ -591,10 +591,16 @@ section {
 
 .portfolio-container .portfolio-box {
   position: relative;
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: 0.15rem solid var(--border-color);
   overflow: hidden;
   display: flex;
+  transition: .5s ease;
+}
+
+.portfolio-container .portfolio-box:hover {
+  box-shadow: 0 0 1rem rgb(0, 0, 0, 0.5);
+  transform: scale(1.03);
 }
 
 .portfolio-box img {
