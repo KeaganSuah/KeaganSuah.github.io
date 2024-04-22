@@ -1294,7 +1294,6 @@ section:nth-child(odd) .animate.scroll {
     padding-left: 3rem;
     padding-right: 3rem;
   }
-
 }
 
 @media (max-width: 385px) {
@@ -1317,7 +1316,7 @@ section:nth-child(odd) .animate.scroll {
     padding-left: 5rem;
     padding-right: 5rem;
   }
- 
+
   .portfolio_popup-inner {
     word-wrap: break-word;
   }
@@ -1326,7 +1325,6 @@ section:nth-child(odd) .animate.scroll {
     overflow-x: hidden;
     max-width: 95%;
   }
-  
 }
 
 /************** KeyFrames functions **************/
