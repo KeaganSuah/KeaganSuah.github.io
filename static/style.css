@@ -11,14 +11,15 @@
   outline: none;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
-  transition: background-color 1s ease, color 0.2s ease;
+  transition: background-color 1s ease, color 0.1s ease;
 }
 
 /* 10, 132, 255 */
 :root {
   --bg-color: rgb(23, 23, 23);
-  --alpha-bg-color: rgb(23, 23, 23, 0.5);
+  --alpha-bg-color: rgb(23, 23, 23, 0.8);
   --second-bg-color: rgb(30, 30, 30);
+  --alpha-second-bg-color: rgb(30, 30, 30,0.8);
   --text-color: rgb(240, 240, 240);
   --title-light: rgb(199, 199, 199);
   --title-mid: rgb(129, 129, 129);
@@ -1128,7 +1129,6 @@ section:nth-child(odd) .animate.scroll {
     width: 100%;
     padding: 1rem 4%;
     background: var(--second-bg-color);
-    box-shadow: 0 0.5rem 1rem var(--title-dark);
     z-index: 1;
     transition: 0.25s ease;
     transition-delay: 0.25s;
