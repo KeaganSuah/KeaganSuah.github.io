@@ -104,9 +104,14 @@ p {
 
 .logo {
   position: relative;
+  height: 38px;
   font-size: 2.5rem;
   color: var(--text-color);
   font-weight: 600;
+}
+
+.logo img{
+  height: 45px;
 }
 
 .navbar {
@@ -1052,12 +1057,12 @@ section {
 #menu-icon .animate,
 .home.show-animate .animate {
   animation: showDown 1s ease forwards;
-  animation-delay: calc(0.4s * var(--i));
+  animation-delay: calc(0.2s * var(--i));
 }
 
 .animate.scroll {
   transition: 1s ease;
-  transition-delay: calc(0.4s / var(--i));
+  transition-delay: calc(0.2s / var(--i));
   animation: none;
 }
 
@@ -1076,6 +1081,10 @@ section:nth-child(odd) .animate.scroll {
   height: 110%;
 }
 
+.logo .animate{
+  height: 130%;
+}
+
 .tab-titles .animate.scroll {
   height: 130%;
 }
@@ -1085,7 +1094,7 @@ section:nth-child(odd) .animate.scroll {
 .service.show-animate .animate.scroll,
 .portfolio.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll {
-  transition-delay: calc(0.4s * var(--i));
+  transition-delay: calc(0.2s * var(--i));
   width: 0;
 }
 
@@ -1230,6 +1239,17 @@ section:nth-child(odd) .animate.scroll {
     flex-direction: column;
     align-items: center;
   }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+    max-width: 90%;
+    margin: auto;
+  }
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+
 }
 
 /************** Screen Smaller Phones **************/
@@ -1245,13 +1265,6 @@ section:nth-child(odd) .animate.scroll {
 
   .sub-title {
     font-size: 3rem;
-  }
-  .about-col-1,
-  .about-col-2 {
-    flex-basis: 100%;
-  }
-  .about-col-1 {
-    margin-bottom: 30px;
   }
 
   .portfolio-container {
@@ -1292,8 +1305,13 @@ section:nth-child(odd) .animate.scroll {
     width: 38px;
     height: 38px;
   }
-  .portfolio_popup-inner {
+  .portfolio_popup-inner,
+  .portfolio_popup-info {
     width: 95%;
+  }
+
+  .portfolio_popup-info .btn-box{
+    max-width: 100%;
   }
 
   .about {

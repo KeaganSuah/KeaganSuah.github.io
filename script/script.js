@@ -16,7 +16,7 @@ window.onscroll = () => {
   sections.forEach((sec) => {
     let top = window.scrollY;
     let offset = sec.offsetTop - 300;
-    let height = sec.offsetHeight + 150;
+    let height = sec.offsetHeight + 200;
     let id = sec.getAttribute("id");
 
     if (top >= offset && top < offset + height) {
@@ -72,18 +72,18 @@ const typed = new Typed(".multiple-text", {
 });
 
 /************** About Me Page **************/
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
+var tabLinks = document.getElementsByClassName("tab-links");
+var tabContents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabname) {
-  for (tablink of tablinks) {
-    tablink.classList.remove("active-link");
+function openTab(tabName) {
+  for (tabLink of tabLinks) {
+    tabLink.classList.remove("active-link");
   }
-  for (tabcontent of tabcontents) {
-    tabcontent.classList.remove("active-tab");
+  for (tabContent of tabContents) {
+    tabContent.classList.remove("active-tab");
   }
   event.currentTarget.classList.add("active-link");
-  document.getElementById(tabname).classList.add("active-tab");
+  document.getElementById(tabName).classList.add("active-tab");
 }
 
 /************** Portfolio Page **************/
