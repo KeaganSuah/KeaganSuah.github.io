@@ -110,8 +110,9 @@ p {
   font-weight: 600;
 }
 
-.logo img{
-  height: 45px;
+.logo img {
+  height: 35px;
+  align-items: center;
 }
 
 .navbar {
@@ -1081,7 +1082,7 @@ section:nth-child(odd) .animate.scroll {
   height: 110%;
 }
 
-.logo .animate{
+.logo .animate {
   height: 130%;
 }
 
@@ -1249,7 +1250,6 @@ section:nth-child(odd) .animate.scroll {
   .about-col-1 {
     margin-bottom: 30px;
   }
-
 }
 
 /************** Screen Smaller Phones **************/
@@ -1310,7 +1310,7 @@ section:nth-child(odd) .animate.scroll {
     width: 95%;
   }
 
-  .portfolio_popup-info .btn-box{
+  .portfolio_popup-info .btn-box {
     max-width: 100%;
   }
 
