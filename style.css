@@ -110,6 +110,11 @@ p {
   font-weight: 600;
 }
 
+.logo:focus {
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+}
+
 .logo img {
   height: 35px;
   align-items: center;
@@ -137,6 +142,12 @@ p {
 .navbar a:hover i {
   color: var(--title-mid);
   transform: translateY(-0.45rem);
+}
+
+.navbar a:focus i {
+  border: 2px solid var(--main-color);
+  padding: 5px;
+  border-radius: 1rem;
 }
 
 .navbar a.active {
@@ -248,6 +259,10 @@ section {
   width: 100%;
 }
 
+.btn-box .btn:focus {
+  border-color: var(--main-color);
+}
+
 .home-imgHover {
   position: absolute;
   top: 0%;
@@ -317,14 +332,20 @@ section {
   display: flex;
   margin: 20px 0 40px;
 }
-.tab-titles p {
+.tab-titles a {
   font-size: 2rem;
   font-weight: 500;
   color: var(--title-dark);
 }
 
-.tab-titles p:hover {
+.tab-titles a:hover {
   color: var(--title-mid);
+}
+
+.tab-titles a:focus {
+  border: 2px solid var(--main-color);
+  border-radius: 1rem;
+  padding: 2px;
 }
 
 .tab-links {
@@ -585,6 +606,12 @@ section {
 
 .filter-buttons .btn:hover {
   color: var(--title-light);
+}
+
+.filter-buttons .btn:focus {
+  border: 2px solid var(--main-color);
+  border-radius: 1rem;
+  padding: 3px;
 }
 
 .portfolio-container {
@@ -882,6 +909,10 @@ section {
   width: 100%;
 }
 
+.contact_btn:focus {
+  border-color: var(--main-color);
+}
+
 .contact form .focus {
   position: absolute;
   top: 0;
@@ -940,6 +971,10 @@ section {
 
 .contact-sci a:hover::before {
   width: 100%;
+}
+
+.contact-sci a:focus {
+  border-color: var(--main-color);
 }
 
 .contact .row {
@@ -1030,6 +1065,10 @@ section {
 
 .footer-iconTop a:hover::before {
   height: 0;
+}
+
+.footer-iconTop a:focus {
+  border-color: var(--main-color);
 }
 
 .footer-iconTop a i {

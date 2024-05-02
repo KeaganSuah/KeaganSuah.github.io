@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Keagan Suah Portfolio</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Keagan Suah</title>
-
+    <meta name="keywords" content="Keagan Suah Personal Website">
+    <meta name="author" content="Keagan Suah">
+    <meta name="description" content="Hello, I'm Keagan Suah, and this is my personal website. Come visit my website to know more about me and view my portfolio!">
     <!-- Personal Imported Files -->
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" sizes="512x512" href="static/icon.png" />
-
     <!-- External Imported Items -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -84,9 +85,9 @@
           Hello, I'm a computer science student passionate about problem-solving and innovation. Beyond my studies, I actively explore cutting-edge technologies, develop projects, and participate in hackathons. I'm eager to work with professionals and contribute to meaningful projects!<span class="animate scroll" style="--i: 5"></span>
           </p>
           <div class="tab-titles">
-            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-            <p class="tab-links" onclick="openTab('experience')">Experience</p>
-            <p class="tab-links" onclick="openTab('education')">Educations</p>
+            <a href="#about" class="tab-links active-link" onclick="openTab('skills')">Skills</a>
+            <a href="#about" class="tab-links" onclick="openTab('experience')">Experience</a>
+            <a href="#about" class="tab-links" onclick="openTab('education')">Educations</a>
             <span class="animate scroll" style="--i: 6"></span>
           </div>
           <div class="tab-contents active-tab" id="skills">
@@ -405,8 +406,8 @@
   <div class="contact-info-item">
     <div class="icon"><i class='bx bxs-spreadsheet'></i></div>
     <h4>My Resume</h4>
-    <a href="static/Resume.pdf" download>
-    <button class="contact_btn">Download</button>
+    <a href="static/Resume.pdf" download class="contact_btn">
+    Download
   </a>
     <span class="animate scroll" style="--i: 6"></span>
   </div>
