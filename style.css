@@ -110,10 +110,6 @@ p {
   font-weight: 600;
 }
 
-.logo:focus {
-  border: 2px solid var(--main-color);
-  border-radius: 50%;
-}
 
 .logo img {
   height: 35px;
@@ -139,15 +135,10 @@ p {
   transition: 0.5s ease;
 }
 
-.navbar a:hover i {
+.navbar a:hover i,
+.navbar a:focus i {
   color: var(--title-mid);
   transform: translateY(-0.45rem);
-}
-
-.navbar a:focus i {
-  border: 2px solid var(--main-color);
-  padding: 5px;
-  border-radius: 1rem;
 }
 
 .navbar a.active {
@@ -338,14 +329,9 @@ section {
   color: var(--title-dark);
 }
 
-.tab-titles a:hover {
-  color: var(--title-mid);
-}
-
+.tab-titles a:hover,
 .tab-titles a:focus {
-  border: 2px solid var(--main-color);
-  border-radius: 1rem;
-  padding: 2px;
+  color: var(--title-mid);
 }
 
 .tab-links {
@@ -604,14 +590,9 @@ section {
   color: var(--title-dark);
 }
 
-.filter-buttons .btn:hover {
-  color: var(--title-light);
-}
-
+.filter-buttons .btn:hover,
 .filter-buttons .btn:focus {
-  border: 2px solid var(--main-color);
-  border-radius: 1rem;
-  padding: 3px;
+  color: var(--title-light);
 }
 
 .portfolio-container {
@@ -1166,6 +1147,14 @@ section:nth-child(odd) .animate.scroll {
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .tab-titles a:hover {
+  color: var(--text-color);
+}
+
+.navbar a.active {
+  color: var(--text-color);
+}
 }
 
 /************** Screen Phones **************/
