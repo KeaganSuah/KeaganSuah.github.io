@@ -18,14 +18,14 @@ I'm a first-year computer science student with a deep interest in full-stack web
 - **Services:** Discover the range of services I offer, including full-stack web development, software architecture, performance optimisation, data visualisation, cloud migration, and machine learning integration. Explore how I can help businesses and individuals achieve their goals and tackle challenges.
   
 - **Portfolio:** Explore a showcase of my past projects and experiences. From web applications to machine learning models, see how I've applied my skills and expertise to create impactful solutions.
+  
+- **Contact:** Connect with me! Whether you have a project in mind, want to collaborate, or simply have a question, reach out via email, social media, or through the contact form. I'm always eager to hear from you and explore new opportunities.
 
 ## Technologies
 - JavaScript
 - HTML/CSS
 - Github
 - VSCode
-  
-- **Contact:** Connect with me! Whether you have a project in mind, want to collaborate, or simply have a question, reach out via email, social media, or through the contact form. I'm always eager to hear from you and explore new opportunities.
 
 ## Get in Touch
 
