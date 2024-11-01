@@ -21,11 +21,16 @@ I'm a first-year computer science student with a deep interest in full-stack web
   
 - **Contact:** Connect with me! Whether you have a project in mind, want to collaborate, or simply have a question, reach out via email, social media, or through the contact form. I'm always eager to hear from you and explore new opportunities.
 
-## Technologies
-- JavaScript
+## Technologies and Skills Used
 - HTML/CSS
-- Github
-- VSCode
+- JavaScript
+- Responsive Web Design
+- GitHub (Version Control)
+- Visual Studio Code (VSCode)
+- Front-End Web Development
+- UI/UX Design
+- Search Engine Optimisation (SEO)
+
 
 ## Get in Touch
 
