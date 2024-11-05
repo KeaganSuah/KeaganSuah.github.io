@@ -1,9 +1,6 @@
-# 👨🏻‍💻 Keagan's Portfolio Website
+# 👨🏻‍💻 Portfolio Website Version 1
 
-Welcome to my portfolio website! This is the place where I showcase my skills and expertise as a first-year computer science student passionate about solving real-world problems through innovative projects. 
-
-## Website Link
-[Click Here](https://keagansuah.github.io/) to visit my portfolio website!
+Welcome to this first portfolio website I've made! This is the place where I showcase my skills and expertise as a first-year computer science student passionate about solving real-world problems through innovative projects. 
 
 ## About Me
 
