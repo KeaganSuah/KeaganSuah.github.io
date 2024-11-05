@@ -8,6 +8,8 @@ var pictureIndex = [
   "url(/static/home/whyme/code.jpg)",
 ];
 
+placePictureInBox(boxIndex);
+
 // Change card container style from light to dark mode, as dark mode box shadow is narrower, card container variable change depending on which page user is currently on
 function summaryDark(cardContainer) {
   for (const card of cardContainer) {
