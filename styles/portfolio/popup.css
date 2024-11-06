@@ -124,15 +124,21 @@
 /* style of the sub-heading of the project in the popup */
 .modal_body h3 {
   color: rgb(var(--gray-200));
-  font-size: var(--font-size-xl);
-  font-weight: 400;
+  font-size: var(--font-size-2xl);
+  font-weight: 300;
   margin-bottom: 0.5rem;
 }
 
 .modal_body h4 {
   color: rgb(var(--gray-200));
-  font-size: var(--font-size-xl);
-  font-weight: 400;
+  font-size: var(--font-size-2xl);
+  font-weight: 300;
+}
+
+.modal_body h4 i {
+  color: rgb(var(--gray-200));
+  font-size: var(--font-size-3xl);
+  font-weight: 300;
 }
 
 .segment {
@@ -141,10 +147,10 @@
 
 /* style of the description of the project in the popup */
 .modal_body .description {
-  color: rgb(var(--gray-400));
+  color: rgb(var(--gray-300));
   font-size: var(--font-size-m);
   line-height: var(--line-height-m);
-  font-weight: 300;
+  font-weight: 200;
 }
 
 /* style of the github link of the project in the popup */
@@ -152,7 +158,7 @@
   text-decoration: none;
   color: rgb(var(--blue-500));
   font-size: var(--font-size-m);
-  font-weight: 300;
+  font-weight: 400;
   transition: 0.5s ease-in-out;
 }
 

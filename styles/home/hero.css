@@ -1,10 +1,7 @@
 /* Overall container for hero section */
 .parallax {
   overflow: hidden;
-  background: linear-gradient(
-    rgb(var(--gray-900), 0.5),
-    rgb(var(--blue-700), 0.5)
-  );
+  background: transparent;
   height: 300vh;
 }
 
@@ -30,6 +27,7 @@
 #moon {
   height: auto;
   width: auto;
+  z-index: -1;
 }
 
 /* style for the plane image */
@@ -37,10 +35,16 @@
   overflow: hidden;
   height: auto;
   width: 300px;
+  z-index: -1;
 }
 
 #stars {
-  height: 160%;
+  background: linear-gradient(
+    180deg,
+    rgb(var(--gray-1000)),
+    rgb(var(--blue-900))
+  );
+  height: 110%;
   z-index: -1;
   overflow: hidden;
 }
@@ -56,7 +60,7 @@
 
 /* style for the main title in the hero section */
 .hero_content_section h2 {
-  color: rgb(var(--gray-300));
+  color: rgb(var(--gray-200));
   font-size: var(--font-size-7xl);
   z-index: 2;
   font-weight: 700;
@@ -65,9 +69,9 @@
 /* style for the sub title in the hero section */
 .hero_content_section h3 {
   background: linear-gradient(
-    331deg,
-    rgb(var(--gray-200)),
-    rgb(var(--blue-300))
+    180deg,
+    rgb(var(--blue-700)),
+    rgb(var(--gray-100))
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -84,12 +88,27 @@
   flex-direction: row;
 }
 
+.typing_container-header span {
+  background: linear-gradient(
+    180deg,
+    rgb(var(--blue-700)),
+    rgb(var(--gray-100))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: var(--font-size-4xl);
+  z-index: 2;
+  font-weight: 500;
+  font-family: var(--font-mono);
+}
+
 /* style for the typing animation text */
 .typing_container span {
   background: linear-gradient(
-    331deg,
-    rgb(var(--gray-200)),
-    rgb(var(--blue-300))
+    180deg,
+    rgb(var(--blue-700)),
+    rgb(var(--gray-100))
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -110,7 +129,7 @@
 /* style for each letter in the opening text */
 .hero_content_section ul li {
   list-style: none;
-  color: rgb(var(--gray-300));
+  color: rgb(var(--gray-200));
   font-size: var(--font-size-8xl);
   font-weight: 700;
   z-index: 2;
