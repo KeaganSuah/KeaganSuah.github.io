@@ -1,48 +1,87 @@
-// Get the images displayed in the hero section
-let stars = document.getElementById("stars");
-let moon = document.getElementById("moon");
-let plane = document.getElementById("plane");
+window.addEventListener("load", function () {
+  gsap.registerPlugin(ScrollTrigger);
 
-// Preset all the item positions
-moon.style.top = "100px";
-plane.style.top = "1000px";
-plane.style.left = "-200px";
+  // Initial setup for rotation
+  gsap.set("#astronaut", { rotate: 25 });
 
-// Throttle scroll updates using requestAnimationFrame
-let scrollValue = 0;
-let ticking = false;
+  const moveAstronaut = () => {
+    const width = window.innerWidth;
+    const maxXMovement = width * 0.05; // 20% of the viewport width
 
-window.addEventListener("scroll", () => {
-  scrollValue = window.scrollY;
-  if (!ticking) {
-    window.requestAnimationFrame(() => {
-      updateParallax();
-      ticking = false;
+    gsap.to("#astronaut", {
+      scrollTrigger: {
+        trigger: "#astronaut",
+        start: "top bottom", // Start when #astronaut enters the viewport
+        end: "+=15000", // Extend the end point to create a long scroll range
+        scrub: true, // Syncs animation with scroll position
+        onUpdate: (self) => {
+          const progress = self.progress * 20 * Math.PI; // Increase multiplier for more oscillations
+          const oscillation = Math.sin(progress) * maxXMovement; // Oscillate x-position
+          const rotation = Math.sin(progress) * 25; // Oscillate rotation
+
+          // Apply calculated oscillation to #astronaut
+          gsap.set("#astronaut", {
+            x: oscillation,
+            rotation: rotation,
+          });
+        },
+        invalidateOnRefresh: true, // Recalculates positions on refresh
+      },
     });
-    ticking = true;
-  }
-});
+  };
 
-function updateParallax() {
-  if (scrollValue < 1500) {
-    moon.style.transform = `rotate(${scrollValue * 0.1}deg)`;
-    moon.style.top = 100 + scrollValue * 0.95 + "px";
+  // Initial call
+  moveAstronaut();
 
-    // Make the stars move along with the scroll to create a "static" illusion
-    stars.style.top = scrollValue * 0.95 + "px";
+  const moveMoon = () => {
+    // Moon Rotation and Upward Movement
+    gsap.to("#moon", {
+      y: -888, // Moves up as the user scrolls
+      rotation: 360, // Rotates the moon slowly
+      scrollTrigger: {
+        start: "top top",
+        end: "bottom+=2000", // Extended end point
+        scrub: 2, // Syncs animation with scroll
+        invalidateOnRefresh: true, // Recalculates positions on refresh
+      },
+    });
+  };
 
-    if (window.innerWidth > 1000) {
-      plane.style.left = -400 + scrollValue * 0.8 + "px";
-      plane.style.top = 1000 + scrollValue * 0.3 + "px";
-    } else if (window.innerWidth > 626) {
-      plane.style.left = -400 + scrollValue * 0.5 + "px";
-      plane.style.top = 1000 + scrollValue * 0.3 + "px";
+  // Initial call
+  moveMoon();
+
+  // Plane Horizontal Movement with Responsive Adjustments
+  const movePlane = () => {
+    const width = window.innerWidth;
+    const maxXMovement = width; // 95% of the viewport width
+    let xMovement;
+
+    if (width > 1000) {
+      xMovement = Math.min(1200, maxXMovement); // Move plane more on larger screens
+    } else if (width > 626) {
+      xMovement = Math.min(800, maxXMovement);
     } else {
-      plane.style.left = -300 + scrollValue * 0.35 + "px";
-      plane.style.top = 1000 + scrollValue * 0.3 + "px";
+      xMovement = Math.min(600, maxXMovement);
     }
-  }
-}
+
+    gsap.to("#plane", {
+      x: xMovement, // Moves the plane to the right based on screen size
+      scrollTrigger: {
+        trigger: "#plane",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 0.1,
+        invalidateOnRefresh: true, // Recalculates positions on refresh
+      },
+    });
+  };
+
+  // Initial call
+  movePlane();
+
+  // Refresh all ScrollTriggers on load to ensure correct positioning
+  ScrollTrigger.refresh();
+});
 
 // array of strings to be typed in the hero section
 const typing = new Typed(".multiple-text-header", {

@@ -26,27 +26,60 @@
 /* style for the moon image */
 #moon {
   height: auto;
-  width: auto;
+  width: 40%;
   z-index: -1;
+  left: -5vw; /* Positions the element at 60% of the viewport width */
+  top: 15%;
+  position: fixed;
 }
 
 /* style for the plane image */
 #plane {
   overflow: hidden;
   height: auto;
-  width: 300px;
+  width: 30vw;
+  top: 200%;
+  left: -30vw;
   z-index: -1;
+}
+
+#astronaut {
+  position: fixed; /* Keeps the element fixed in place relative to the viewport */
+  left: 80vw; /* Positions the element at 60% of the viewport width */
+  top: 20vh;
+  transform: translateX(-50%); /* Centers the element horizontally */
+  overflow: hidden;
+  height: auto;
+  width: 20vw; /* Adjust width as needed */
+  z-index: -1;
+}
+
+#astronaut img {
+  width: 100%;
+  height: auto;
 }
 
 #stars {
   background: linear-gradient(
-    180deg,
-    rgb(var(--gray-1000)),
-    rgb(var(--blue-900))
-  );
-  height: 110%;
+      180deg,
+      rgb(var(--gray-1000)),
+      rgb(var(--blue-900))
+    ),
+    url("path/to/your/background-image.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: fixed;
   z-index: -1;
-  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+#stars img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 /* style for each section in the hero container */
@@ -171,17 +204,6 @@
   transition-delay: 500ms;
 }
 
-/* to prevent overflow of image elements */
-@media (max-width: 626px) {
-  #moon {
-    max-width: 250px;
-  }
-
-  #plane {
-    max-width: 100px;
-  }
-}
-
 /* media query for tablets */
 @media (max-width: 1024px) {
   .hero_content_section h2 {
@@ -201,11 +223,18 @@
   }
 }
 
+@media (max-width: 800px) {
+  #moon {
+    width: 60%;
+  }
+
+  #astronaut {
+    width: 40vw;
+  }
+}
+
 /* media query for phone devices */
 @media (max-width: 550px) {
-  #stars {
-    height: 210vh;
-  }
   .hero_content_section h2 {
     font-size: var(--font-size-5xl);
   }
