@@ -167,41 +167,42 @@
   font-weight: 700;
   z-index: 2;
   margin: -3px;
+  transition-delay: 400ms;
 }
 
 /* animation delay for each letter in the opening text */
 .hero_content_section ul li:nth-child(2) {
-  transition-delay: 50ms;
+  transition-delay: 450ms;
 }
 
 .hero_content_section ul li:nth-child(3) {
-  transition-delay: 100ms;
+  transition-delay: 500ms;
 }
 .hero_content_section ul li:nth-child(4) {
-  transition-delay: 150ms;
+  transition-delay: 550ms;
 }
 .hero_content_section ul li:nth-child(5) {
-  transition-delay: 200ms;
+  transition-delay: 600ms;
 }
 .hero_content_section ul li:nth-child(6) {
   margin-right: 4px;
-  transition-delay: 250ms;
+  transition-delay: 650ms;
 }
 
 .hero_content_section ul li:nth-child(7) {
-  transition-delay: 300ms;
+  transition-delay: 700ms;
 }
 .hero_content_section ul li:nth-child(8) {
-  transition-delay: 350ms;
+  transition-delay: 750ms;
 }
 .hero_content_section ul li:nth-child(9) {
-  transition-delay: 400ms;
+  transition-delay: 800ms;
 }
 .hero_content_section ul li:nth-child(10) {
-  transition-delay: 450ms;
+  transition-delay: 850ms;
 }
 .hero_content_section ul li:nth-child(11) {
-  transition-delay: 500ms;
+  transition-delay: 900ms;
 }
 
 /* media query for tablets */

@@ -58,3 +58,71 @@ function gridGlows(cardContainer) {
     });
   }
 }
+
+function logLoadingProgress(percentage) {
+  counterElement.textContent = percentage;
+}
+
+let counterElement = document.querySelector(".counter");
+const overlayElement = document.querySelector(".overlay");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll("img");
+  const totalImages = images.length;
+  let loadedImages = 0;
+
+  if (totalImages === 0) {
+    return;
+  }
+
+  images.forEach((img) => {
+    // If the image is already cached, increment the counter
+    if (img.complete) {
+      incrementCounter();
+    } else {
+      // Listen for the load and error events
+      img.addEventListener("load", incrementCounter);
+      img.addEventListener("error", incrementCounter);
+    }
+  });
+
+  function incrementCounter() {
+    loadedImages++;
+    const percentage = (loadedImages / totalImages) * 100;
+    logLoadingProgress(percentage.toFixed(0));
+    console.log("loading");
+  }
+});
+
+// Log 100% when the entire page has fully loaded
+window.addEventListener("load", () => {
+  console.log("loaded");
+  gsap.to(".counter", 0.25, {
+    opacity: 0,
+  });
+
+  gsap.to(".bar", 1.2, {
+    x: "-500%",
+    stagger: {
+      amount: -0.5,
+    },
+    ease: "power4.inOut",
+  });
+
+  gsap.to(".car", 1.2, {
+    x: "500%",
+    stagger: {
+      amount: 0.5,
+    },
+    ease: "power4.inOut",
+  });
+
+  setTimeout(() => {
+    if (counterElement) counterElement.remove();
+    if (overlayElement) overlayElement.remove();
+  }, 1000); // 2000 milliseconds = 2 seconds
+
+  document.querySelectorAll(".extra_delay").forEach((element) => {
+    element.style.transitionDelay = "1000ms"; // Apply the delay here
+  });
+});

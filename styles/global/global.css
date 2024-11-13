@@ -77,14 +77,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
   font-family: var(--font-inter);
 }
 
 /* Excess content is hidden to remove horizontal scroll bar */
 html {
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 /* set main properties of the article section */

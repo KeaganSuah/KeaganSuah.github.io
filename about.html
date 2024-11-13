@@ -41,6 +41,20 @@
     <link rel="stylesheet" href="/styles/portfolio/popup.css" />
   </head>
   <body>
+    <!-- Loading animation -->
+    <h1 class="counter">0</h1>
+    <section class="overlay">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="car"></div>
+      <div class="car"></div>
+      <div class="car"></div>
+      <div class="car"></div>
+      <div class="car"></div>
+    </section>
     <!-- Header and Navigation -->
     <header class="navbar moveDown">
       <!-- Logo -->
@@ -68,7 +82,7 @@
       <section class="hero">
         <div class="hero_container">
           <!-- Short description about me, Keagan Suah in the hero section -->
-          <div class="description fadeLeft delay_2">
+          <div class="description fadeLeft extra_delay">
             <h1>about</h1>
             <h2>
               I'm a passionate Computer Science Student from Sunny Singapore
@@ -80,7 +94,7 @@
             </p>
           </div>
           <!-- Image of Keagan Suah in hero section -->
-          <figure class="fadeRight delay_2">
+          <figure class="fadeRight extra_delay">
             <img
               src="/static/about/hero/myFace.PNG"
               alt="picture of Keagan Suah taken professionally without background"
@@ -537,6 +551,10 @@
       </section>
     </footer>
     <!-- End Footer -->
+
+    <!-- GSAP and ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 
     <!-- Javascripts Scripts -->
     <script src="/scripts/global/navbar.js"></script>

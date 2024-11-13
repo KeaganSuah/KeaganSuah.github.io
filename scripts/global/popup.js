@@ -23,9 +23,32 @@ closeModalButtons.forEach((button) => {
   });
 });
 
+let scrollPosition = 0;
+
+function disableScroll() {
+  // Store the current scroll position
+  scrollPosition = window.pageYOffset;
+
+  // Apply inline styles and add the class
+  document.body.style.top = `-${scrollPosition}px`;
+  document.body.classList.add("disable-scroll");
+}
+
+function enableScroll() {
+  // Remove the class
+  document.body.classList.remove("disable-scroll");
+
+  // Reset the inline style
+  document.body.style.top = "";
+
+  // Restore the scroll position
+  window.scrollTo(0, scrollPosition);
+}
+
 // function to open the popup modal, as well as update the title, image and description
 function openModal(modal, title, image, alternative, popups) {
   if (modal == null) return;
+  disableScroll();
   modal.classList.add("active");
   overlay.classList.add("active");
 
@@ -120,6 +143,7 @@ function resetAndAddSkills(newSkills) {
 // function to close the popup modal
 function closeModal(modal) {
   if (modal == null) return;
+  enableScroll();
   modal.classList.remove("active");
   overlay.classList.remove("active");
 }

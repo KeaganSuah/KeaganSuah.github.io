@@ -194,6 +194,14 @@ ul.technology li {
   display: inline-block; /* Align the items horizontally */
 }
 
+.disable-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden; /* Prevents scrolling */
+}
+
 /* media query for tablet devices */
 @media (max-width: 1024px) {
   .modal {
