@@ -88,15 +88,20 @@ const typing = new Typed(".multiple-text-header", {
   strings: ["Print", "Console.log", "std::cout﹤﹤"],
   typeSpeed: 70,
   backSpeed: 50,
-  BackDelay: 1600,
+  backDelay: 1600,
   loop: true,
 });
 
 const typed = new Typed(".multiple-text", {
-  strings: ["Web Developer", "Computer Student", "Data Analyst"],
-  typeSpeed: 70,
+  strings: [
+    "Web Developer",
+    "Data Analyst",
+    "Coding Enthusiast",
+    "Problem Solver",
+  ],
+  typeSpeed: 50,
   backSpeed: 50,
-  BackDelay: 1600,
+  backDelay: 1600,
   loop: true,
 });
 

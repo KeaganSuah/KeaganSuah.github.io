@@ -51,8 +51,12 @@ const NS_Roll_Call_System = {
       link: "https://github.com/KeaganSuah/NS-Project-Automation",
     },
     {
-      title: "<i class='bx bxs-file-image'></i> Testimonial for Project",
-      link: "/static/portfolio/portfolio/NS Testimonial",
+      title: "<i class='bx bxs-book-content'></i> Testimonial for Project",
+      link: "/static/portfolio/portfolio/NS_Testimonial.pdf",
+    },
+    {
+      title: "<i class='bx bxs-book'></i> Report for Project",
+      link: "/static/portfolio/portfolio/NS_Report.pdf",
     },
   ],
 };
@@ -83,7 +87,7 @@ const E_Commerce = {
       link: "https://github.com/KeaganSuah/Hackathon-E-Commerce",
     },
     {
-      title: "<i class='bx bxs-file-image'></i> Certificate of Appreciation",
+      title: "<i class='bx bxs-book-content'></i> Certificate of Appreciation",
       link: "/static/portfolio/portfolio/Hackathon23.pdf",
     },
   ],
@@ -119,8 +123,12 @@ const NS_Duty_Planner_System = {
       link: "https://github.com/KeaganSuah/NS-Project-Automation",
     },
     {
-      title: "<i class='bx bxs-file-image'></i> Testimonial for Project",
-      link: "/static/portfolio/portfolio/NS Testimonial",
+      title: "<i class='bx bxs-book-content'></i> Testimonial for Project",
+      link: "/static/portfolio/portfolio/NS_Testimonial.pdf",
+    },
+    {
+      title: "<i class='bx bxs-book'></i> Report for Project",
+      link: "/static/portfolio/portfolio/NS_Report.pdf",
     },
   ],
 };
@@ -254,7 +262,7 @@ const dsta_hackathon24 = {
       link: "https://github.com/KeaganSuah/Inventory-management-and-billing-system",
     },
     {
-      title: "<i class='bx bxs-file-image'></i> Certificate of Participation",
+      title: "<i class='bx bxs-book-content'></i> Certificate of Participation",
       link: "/static/portfolio/portfolio/DSTA hackathon24.pdf",
     },
   ],
